@@ -11,6 +11,7 @@ Duplicate Checks - Images are checked for duplicates before being proccessed.
 
 Space Checks - Destination Folder is checked for adequete space before being proccessed.
 
+Colorful - Nice color coded information.
 ##Dependencies and Installation
 
 [Python 3](https://www.python.org/downloads) - The language behind this program.
