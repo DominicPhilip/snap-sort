@@ -13,7 +13,7 @@ Space Checks - Destination Folder is checked for adequete space before being pro
 
 ##Dependencies and Installation
 
-[Python 3](://www.python.org/downloads)
+[Python 3](://www.python.org/downloads) - The language behind this program.
 
 
 [ExifRead](https://pypi.python.org/pypi/ExifRead) - Gets the tags of the images.
