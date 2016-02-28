@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-#@author Dominic Philip
+"""
+@date: February 21, 2016
+@author: Dominic Philip
+"""
 
 import os
 import psutil
