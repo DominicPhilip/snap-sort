@@ -51,20 +51,20 @@ class SnapSort:
                         if os.path.exists(os.path.join(core + "/" + base + extension)):
                             self.__rename(path, core + "/" + base, extension)
                         else:
-                            print(bc.bcolors.OKGREEN + "Copying path '" + path + "' to '" + end + "'" + bc.bcolors.ENDC)
+                            print(bc.BColors.OKGREEN + "Copying path '" + path + "' to '" + end + "'" + bc.BColors.ENDC)
                             shutil.copy(path, os.path.join(end))
                     else:
-                        print(bc.bcolors.OKBLUE + "Making path '" + core + "'" + bc.bcolors.ENDC)
+                        print(bc.BColors.OKBLUE + "Making path '" + core + "'" + bc.BColors.ENDC)
                         os.makedirs(core)
-                        print(bc.bcolors.OKGREEN + "Copying path '" + path + "' to '" + end + "' " + bc.bcolors.ENDC)
+                        print(bc.BColors.OKGREEN + "Copying path '" + path + "' to '" + end + "' " + bc.BColors.ENDC)
                         shutil.copy(path, os.path.join(end))
                 else:
-                    print(bc.bcolors.OKBLUE + "Making path '" + core + "'" + bc.bcolors.ENDC)
+                    print(bc.BColors.OKBLUE + "Making path '" + core + "'" + bc.BColors.ENDC)
                     os.makedirs(core)
-                    print(bc.bcolors.OKGREEN + "Copying path '" + path + "' to '" + end + "' " + bc.bcolors.ENDC)
+                    print(bc.BColors.OKGREEN + "Copying path '" + path + "' to '" + end + "' " + bc.BColors.ENDC)
                     shutil.copy(path, os.path.join(end))
             except (KeyError, OSError, DateError):
-                print(bc.bcolors.FAIL + "Picture '" + path + "' cannot be moved and will be logged." + bc.bcolors.ENDC)
+                print(bc.BColors.FAIL + "Picture '" + path + "' cannot be moved and will be logged." + bc.BColors.ENDC)
                 self.__log(path)
                 pass
 
@@ -74,8 +74,8 @@ class SnapSort:
         while True:
             rename = os.path.join(new_path + "_" + str(count) + extension)
             if not os.path.exists(rename):
-                print(bc.bcolors.OKBLUE + "Renaming '" + old_path + "' to '" + rename + "'" + bc.bcolors.ENDC)
-                print(bc.bcolors.OKGREEN + "Copying '" + old_path + "' to '" + rename + "'" + bc.bcolors.ENDC)
+                print(bc.BColors.OKBLUE + "Renaming '" + old_path + "' to '" + rename + "'" + bc.BColors.ENDC)
+                print(bc.BColors.OKGREEN + "Copying '" + old_path + "' to '" + rename + "'" + bc.BColors.ENDC)
                 shutil.copy(old_path, rename)
                 break
             count += 1
