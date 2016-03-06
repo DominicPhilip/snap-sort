@@ -64,7 +64,7 @@ class SnapSort:
                     print(bc.BColors.OKGREEN + "Copying path '" + path + "' to '" + end + "' " + bc.BColors.ENDC)
                     shutil.copy(path, os.path.join(end))
             except (KeyError, OSError, DateError):
-                print(bc.BColors.FAIL + "Picture '" + path + "' cannot be moved and will be logged." + bc.BColors.ENDC)
+                print(bc.BColors.FAIL + "Picture '" + path + "' cannot be copied and will be logged." + bc.BColors.ENDC)
                 self.__log(path)
                 pass
 
