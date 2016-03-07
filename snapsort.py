@@ -6,11 +6,11 @@
 """
 
 import os
-import psutil
-import shutil
 import logging
 import time
 import calendar
+import shutil
+import psutil
 import exifread
 import bcolors as bc
 
