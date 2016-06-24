@@ -20,11 +20,11 @@ Colorful - Nice color coded information.
 [ExifRead](https://pypi.python.org/pypi/ExifRead) - Gets the tags of the images.
 
 ```
-$ sudo pip install exifread
+$ pip install exifread
 ```
 
 [Psutil](https://pypi.python.org/pypi/psutil) - Gets available file space.
 
 ```
-$ sudo pip install psutil
+$ pip install psutil
 ```
