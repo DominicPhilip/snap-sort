@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 """
-@date: February 21, 2016
+@date: July 13, 2016
 @author: Dominic Philip
+@version: 1.0
 """
 
 import os
